@@ -1,13 +1,19 @@
 // 2. Напишите функцию, которая принимает строку и возвращает количество гласных в этой
 // строке.
 
-const countingVowels = (str) => {
-    const vowelList = 'aeiouyAEIOUY'
-    let count = 0
+// const countingVowels = (str) => {
+//     const vowelList = 'aeiouyAEIOUY'
+//     let count = 0
 
-    for (let i = 0; i < str.length; i++) vowelList.indexOf(str[i]) !== -1 ? count += 1 : null
+//     for (let i = 0; i < str.length; i++) vowelList.indexOf(str[i]) !== -1 ? count += 1 : null
 
-    return count
-}
+//     return count
+// }
 
-console.log(countingVowels('Hello my frends'))
+// console.log(countingVowels('Hello my frends'))
+
+const vowels = 'aoeui'
+const vowelList = 'Alina'.toLocaleLowerCase()
+const countVowels = () =>
+	vowelList.split('').filter(el => vowels.includes(el)).length
+console.log(countVowels())
