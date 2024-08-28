@@ -17,7 +17,7 @@ class SquareRootCalculator extends NumberGenerator {
 		const num = super.generateNumber()
 		let res = 0
 
-		while ((res + 1) * (res + 1) < num) {
+		while ((res + 1) * (res + 1) <= num) {
 			res++
 		}
 
